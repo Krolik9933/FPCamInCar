@@ -10,7 +10,7 @@ This is a hack for The Simpsons Hit & Run that adds first person camera replacin
 ## How to Use
 
 - Open Lucas Simpsons Hit & Run Mod Launcher, go to "Settings" tab and tick "First Person Camera In Car" checkbox
-- When playing, get in car, and switch to bumper camera either in game settings (Options->Settings->Camera) or by pressing button "Change camera" (Num 0 by default)
+- When playing, get in car, and switch to bumper camera either in game settings (Options->Settings->Camera) or by pressing "Change camera" button (Num 0 by default)
 
 ## Thanks to
 
