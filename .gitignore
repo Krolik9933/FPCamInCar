@@ -1,0 +1,9 @@
+/Debug
+/Release
+FPCamInCar.opensdf
+*.suo
+*.sdf
+/ipch
+/SHaRCamera/ReadMe.txt
+/SHaRCamera/Debug
+/SHaRCamera/Release
