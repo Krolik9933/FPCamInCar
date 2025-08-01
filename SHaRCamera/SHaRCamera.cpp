@@ -3,6 +3,7 @@
 #include "hack_functions.h"
 #include <cassert>
 
+
 void *pPlayer, *pTargetCharacter, *jmpBack, *fun_427410, *fun_4273a0, *updateJoints;
 bool alwaysDriverView, bouncing, isRear;
 float FOV, hFOV, nearClip, bounceY;
@@ -97,9 +98,7 @@ void updateCamera_setPosAndLook()
 	float characterScale;
 	bool phantomDriver, isPassenger;
 	pPlayer = (void*)*(int*)Choose(0x6c922c, 0x6c91ec, 0x6c9224, 0x6c91ec);
-
 	vec3f seatPos;
-
 	__asm
 	{
 		push FOV
@@ -112,7 +111,6 @@ void updateCamera_setPosAndLook()
 	characterScale = *(float*)((int)pCar + 0x520);
 	phantomDriver = *(bool*)((int)pCar + 0x220);
 	pDriver = (void*)*(int*)((int)pCar + 0x21c);
-
 	isPassenger = false;
 
 	if(pDriver != nullptr)
@@ -216,7 +214,6 @@ void updateCamera_setPosAndLook()
 	*(float*)((int)pBumperCam + 0xf0) = camPos.x + rotationMatrix[2] * targetZOffset;	//front camera target x
 	*(float*)((int)pBumperCam + 0xf4) = camPos.y + rotationMatrix[5] * targetZOffset;	//front camera target y
 	*(float*)((int)pBumperCam + 0xf8) = camPos.z + rotationMatrix[8] * targetZOffset;	//front camera target z
-
 	float *carTransform = (float*)((int)pCamTarget + 0x20);
 	for (int i = 0; i < 9; i++)
 	{
@@ -233,7 +230,7 @@ void updateCamera_setPosAndLook()
 
 void __declspec(naked) updateCamera_setUp()
 {
-	jmpBack = Choose(0x420388, 0x420328, 0x420053, 0x420648);
+	jmpBack = Choose(0x420388, 0x420328, 0x420058, 0x420648);
 	if(!isRear)
 		__asm
 		{
