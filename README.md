@@ -6,6 +6,7 @@ This is a hack for The Simpsons Hit & Run that adds first person camera replacin
 
 - Download an archive from https://drive.google.com/file/d/1KIZIkXNHvT_jyGubRvwMEhhW-FAxPn-x/view?usp=sharing
 - Extract Hacks folder to your Mod Launcher directory (merge if you already have one)
+- WARNING! If the hack doesn't work and the game still uses standard bumper camera instead of first person one, you need to install Microsoft Visual C++ 2012 Redistributable on your computer
 
 ## How to Use
 
